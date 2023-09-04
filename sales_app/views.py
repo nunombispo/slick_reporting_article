@@ -8,10 +8,6 @@ class SalesReport(SlickReportView):
     report_model = Sales
     date_field = 'date_of_sale'
     columns = ['product__name', 'total_sales']
-    date_filter_settings = {
-        'enable': True,
-        'default_dates': ['this_month', 'last_month']
-    }
 
 
 class CustomerSalesReport(SlickReportView):
